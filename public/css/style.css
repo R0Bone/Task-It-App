@@ -1,10 +1,231 @@
-h1{
-    color: red;
+/* Index Layout & Styling */
+.index-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .index-div-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .btn-index{
+    cursor: pointer;
+    outline: 0;
+    color: #fff;
+    background-color: #852747;
+    border-color: #852747;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1rem;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;            
+  }
+  
+  /* Login Layout & Stying */
+  .login-container,
+  .signup-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem 2rem 3rem 2rem;
+  }
+  .login-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .login-heading,
+  .signup-heading{
+    text-align: center;
+  }
+
+  /* Signup Layout & Styling */
+  .signup-form {
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+  }
+  
+  /* Todos Layout & Styling */
+  .todos-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'DynaPuff', cursive;/*added a font*/
+    
+  }
+  .todos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: #852747 solid 5px;
+    border-radius: 25px;
+    padding: 20px 20px;
+    margin: 50px 20px;
+    width: 800px;
+  }
+
+.thingsTodo{  /*added box to things to do*/
+  border: 2px solid black;
+  padding: 0 2px 0 2px;
+  
 }
-.completed{
-    text-decoration: line-through;
-    color: gray;
-}
-.not{
-    text-decoration: underline;
-}
+  .todo-items{ 
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*setting up the table */
+  }
+  th, td {
+    padding: 10px 20px;
+  }
+  .todos-heading{
+    text-align: center;
+  }
+  .todos-heading h1{
+    margin-top: 25px;
+  }
+  th, td {
+    border-radius: 6px;
+  }
+  .menuBar{ 
+    background: #fff;
+    margin-right: 5px;
+  }
+  tbody tr:nth-child(even) {
+    background: #f4e7c8;
+  }
+  .todoItem td:first-child {
+    font-size: 1.1rem;
+  }
+  .todoItem td:first-child:hover {
+    color: grey;
+    cursor: pointer;
+  }
+  .del {
+    color: #cc6161;
+    font-size: .8rem;
+    cursor: pointer;
+  }
+  .del:hover {
+    color: #e60000;
+  }
+  .todos-body h2 {
+    margin: 40px 0;
+  }
+  .logout{
+    width: 100px;
+    margin-top: 30px;
+  }
+  .logout-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .todos-formbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .todos-formbox input {
+    font-family: 'DynaPuff', cursive;
+  }
+
+  
+  /*Styling To-Dos*/
+  .completed{
+      text-decoration: line-through;
+      color: #FF7777;
+  }
+  .not{
+      text-decoration: underline;
+  }
+  .btn-submit{
+    cursor: pointer;
+    outline: 0;
+    color: #fff;
+    background-color: #852747;
+    border-color: #852747;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1rem;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+  
+  .formbox{
+      display: inline-block;
+      padding: 7px;
+      margin: 3px 3px 3px 3px;
+      border-radius: 6px;
+      font-size: 1rem;
+      background: #fbfbfb;
+      border: 2px solid transparent;
+      height: 16px;
+      box-shadow: 0 0 0 1px #dddddd, 0 2px 4px 0 rgb(0 0 0 / 7%), 0 1px 1.5px 0 rgb(0 0 0 / 5%);
+  
+  }
+  /* Universal Styling */
+  body{
+    background-color: #f4eddc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  h1 {
+    color: #852747;
+    font-size: 2.75rem;
+    text-align: center;
+  }
+  h2 {
+    color: #FF7777;
+    font-size: 1.5rem;
+  }
+  h3 {
+    color: #FF7777;
+    font-size: 1.5rem;
+  }
+  span, li {
+    color: #A2416B;
+    font-size: 1.25rem;
+  }
+  a {
+    color: #990a99;
+    font-size: 1rem;
+    margin: .1rem .2rem .1rem .2rem;
+    text-decoration: none;
+  }
+  a.btn-index {
+    font-size: 2.5rem;
+    padding: 1.5rem;
+  }
+  input {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .btn{
+        cursor: pointer;
+        outline: 0;
+        color: #fff;
+        background-color: #852747;
+        border-color: #852747;
+        display: inline-block;
+        font-weight: 400;
+        line-height: 1rem;
+        text-align: center;
+        border: 1px solid transparent;
+        padding: 6px 12px;
+        font-size: 1rem;
+        border-radius: .35rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;            
+      }
+  .btn:hover {
+     background-color: #b46e86; 
+  }

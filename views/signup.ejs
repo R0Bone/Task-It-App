@@ -4,20 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Project Managment Tasker</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <% if (locals.messages.errors) { %>
-        <% messages.errors.forEach( el => { %>
-            <div class="alert alert-danger"><%= el.msg %></div>
-        <% }) %>    
-    <% } %>
-    <form action="/signup" method="POST">
-        <input type="text" name="userName" placeholder="User Name">
-        <input type="email" name="email" placeholder="Email">
-        <input type="password" name="password" placeholder="Password">
-        <input type="password" name="confirmPassword" placeholder="Confirm Password">
-        <input type="submit">
-    </form>
+  <section class="signup-container">
+    <section class="signup-heading">
+      <h1>Kindly provide a User Name and your Email to Sign Up</h1>
+    </section>
+      <% if (locals.messages.errors) { %>
+          <% messages.errors.forEach( el => { %>
+              <div class="alert alert-danger"><%= el.msg %></div>
+          <% }) %>    
+      <% } %>
+      <section class="form signup-form">
+        <form action="/signup" method="POST">
+          <input type="text" name="userName" placeholder="User Name" class="formbox">
+          <input type="email" name="email" placeholder="Email" class="formbox">
+          <input type="password" name="password" placeholder="Password" class="formbox">
+          <input type="password" name="confirmPassword" placeholder="Confirm Password" class="formbox">
+          <input type="submit" class="btn btn-submit">
+        </form>
+      </section>
+    </section>
 </body>
 </html>

@@ -10,7 +10,8 @@ const connectDB = require('./config/database')
 const mainRoutes = require('./routes/main')
 const todoRoutes = require('./routes/todos')
 
-require('dotenv').config({path: './config/.env'})
+// Load config by calling dotenv and creating an object with the path
+require('dotenv').config({ path: './config/.env' })
 
 // Passport config
 require('./config/passport')(passport)
@@ -22,25 +23,27 @@ app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.use(logger('dev'))
-// Sessions
+
+// Session Middleware - must go above passport middleware 
 app.use(
-    session({
-      secret: 'keyboard cat',
-      resave: false,
-      saveUninitialized: false,
-      store: new MongoStore({ mongooseConnection: mongoose.connection }),
-    })
-  )
-  
+  session({
+    secret: 'keyboard cat',
+    resave: false, // won't save the session if nothing was changed. 
+    saveUninitialized: false, //we won't create a session unless something is stored. 
+    store: new MongoStore({ mongooseConnection: mongoose.connection }),
+  })
+)
+
 // Passport middleware
 app.use(passport.initialize())
 app.use(passport.session())
 
 app.use(flash())
-  
-app.use('/', mainRoutes)
+
+app.use('/', mainRoutes) //Things that need a route will go to the /main file to find the correct route
 app.use('/todos', todoRoutes)
- 
-app.listen(process.env.PORT, ()=>{
-    console.log('Server is running, you better catch it!')
-})    
+
+// Port
+app.listen(process.env.PORT, () => {
+  console.log('Server is running, you better catch it!')
+})

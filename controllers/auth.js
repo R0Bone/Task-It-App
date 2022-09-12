@@ -3,12 +3,15 @@ const validator = require('validator')
 const User = require('../models/User')
 
  exports.getLogin = (req, res) => {
+   console.log("Start getLogin")
     if (req.user) {
+      console.log("req.user TRUE")
       return res.redirect('/todos')
     }
     res.render('login', {
       title: 'Login'
     })
+   console.log("End of 'getLogin'")
   }
   
   exports.postLogin = (req, res, next) => {
