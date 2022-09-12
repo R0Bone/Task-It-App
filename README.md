@@ -1,10 +1,10 @@
 # Task It - a quick and simple to use team project app!
 
-![gif of app in action](https://github.com/R0Bone/Task-It-App/blob/main/grouptodo.gif) (change file name)
+![gif of app in action](https://github.com/R0Bone/Task-It-App/blob/main/grouptodo.gif) 
 
 # Introduction
 
-This [insert title] app is built using the MVC Architecture. We have also implemented "authorization" so folxs can sign up and log into the app. 
+This Task-It app is built using the MVC Architecture. We have also implemented "authorization" so folxs can sign up and log into the app. 
 
 Users can log task items as well as assign tasks to other users. Additionally, tasks can be organized by project. 
 
@@ -75,8 +75,8 @@ We hope you enjoy our app. :)
 
 # Contributors
 
-Robert Arroyo [@R0Bone](https://github.com/R0Bone)
-Breanna Bang [@breabang](https://github.com/breabang)
+Robert Arroyo [@R0Bone](https://github.com/R0Bone)<br>
+Breanna Bang [@breabang](https://github.com/breabang)<br>
 JP Canindo [@Illuztrado](https://github.com/Illuztrado)
 Aaron Clamp [@ronaldconn](https://github.com/ronaldconn)
 Terrashawn Starks [@...](https://github.com/...)
