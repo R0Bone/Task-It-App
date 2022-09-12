@@ -77,10 +77,10 @@ We hope you enjoy our app. :)
 
 Robert Arroyo [@R0Bone](https://github.com/R0Bone)<br>
 Breanna Bang [@breabang](https://github.com/breabang)<br>
-JP Canindo [@Illuztrado](https://github.com/Illuztrado)
-Aaron Clamp [@ronaldconn](https://github.com/ronaldconn)
-Terrashawn Starks [@...](https://github.com/...)
-Jacob Willkomm [@JacobWillkomm](https://github.com/JacobWillkomm)
+JP Canindo [@Illuztrado](https://github.com/Illuztrado)<br>
+Aaron Clamp [@ronaldconn](https://github.com/ronaldconn)<br>
+Terrashawn Starks [@...](https://github.com/...)<br>
+Jacob Willkomm [@JacobWillkomm](https://github.com/JacobWillkomm)<br>
 
 
 
