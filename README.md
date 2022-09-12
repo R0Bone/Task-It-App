@@ -1,6 +1,6 @@
-# Task It - the
+# Task It - a quick and simple to use team project app!
 
-![gif of app in action](https://replit.com/@AaronClamp/todo-mvc-auth-local#grouptodo.gif) (change file name)
+![gif of app in action](https://github.com/R0Bone/Task-It-App/blob/main/grouptodo.gif) (change file name)
 
 # Introduction
 
